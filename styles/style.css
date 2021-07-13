@@ -108,3 +108,58 @@ hr{
 .course-duration span{
     color: #ED6B4F;
 }
+
+/* --------------
+  Media Queries  
+----------------*/
+
+/* Mobile Devices  */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .blogs, .courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 0px;
+        text-align: center;
+    }
+    .palyer, .blog{
+        flex-direction: column;
+    }
+    .course{
+        margin-bottom: 20px;
+    }
+    .course-info{
+        justify-content: space-evenly
+    }
+    
+}
+
+/* Tablet Device  */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .palyer{
+        flex-direction: column;
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+    } 
+      
+}
